@@ -89,6 +89,15 @@ class EarlyCrashHandler(
     }
 
     private fun startCrashActivity(report: String) {
+        // Android Binder limit is ~1 MB per transaction. Truncate if needed.
+        val safeReport = if (report.length > 60_000)
+            report.take(60_000) + "\n\n[... truncated — see smspeer_crash.txt for full report ...]"
+        else report
+
+        val extPath = context.getExternalFilesDir(null)
+            ?.let { File(it, CRASH_FILE_NAME).absolutePath } ?: ""
+        val intPath = File(context.filesDir, CRASH_FILE_NAME).absolutePath
+
         context.startActivity(
             Intent(context, CrashActivity::class.java).apply {
                 addFlags(
@@ -96,11 +105,7 @@ class EarlyCrashHandler(
                     Intent.FLAG_ACTIVITY_CLEAR_TASK or
                     Intent.FLAG_ACTIVITY_NO_ANIMATION
                 )
-                putExtra(CrashActivity.EXTRA_REPORT, report)
-                // Pass file paths so the user knows where to find the saved file
-                val extPath = context.getExternalFilesDir(null)
-                    ?.let { File(it, CRASH_FILE_NAME).absolutePath } ?: ""
-                val intPath = File(context.filesDir, CRASH_FILE_NAME).absolutePath
+                putExtra(CrashActivity.EXTRA_REPORT, safeReport)
                 putExtra(CrashActivity.EXTRA_EXT_PATH, extPath)
                 putExtra(CrashActivity.EXTRA_INT_PATH, intPath)
             }
