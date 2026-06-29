@@ -8,7 +8,7 @@ class LocalServerSettings(
     private val storage: KeyValueStorage,
 ) {
     var enabled: Boolean
-        get() = storage.get<Boolean>(ENABLED) ?: false
+        get() = storage.get<Boolean>(ENABLED) ?: true
         set(value) = storage.set(ENABLED, value)
 
     var deviceId: String?

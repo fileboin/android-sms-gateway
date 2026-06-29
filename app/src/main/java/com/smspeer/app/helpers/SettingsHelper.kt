@@ -16,7 +16,7 @@ class SettingsHelper(private val context: Context) {
     }
 
     var autostart: Boolean
-        get() = settings.getBoolean(PREF_KEY_AUTOSTART, false)
+        get() = settings.getBoolean(PREF_KEY_AUTOSTART, true)
         set(value) {
             // enable broadcast receiver
             context.packageManager.setComponentEnabledSetting(
