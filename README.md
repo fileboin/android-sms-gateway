@@ -28,11 +28,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/capcom6/android-sms-gateway">
+  <a href="https://github.com/capcom6/android-smspeer">
     <img src="assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">SMS Gateway for Android™</h3>
+<h3 align="center">SMSpeer™</h3>
 
   <p align="center">
     Turns your smartphone into an SMS gateway for sending and receiving messages via API.
@@ -40,10 +40,10 @@
     <a href="https://sms-gate.app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <!-- <a href="https://github.com/capcom6/android-sms-gateway">View Demo</a> -->
-    <a href="https://github.com/capcom6/android-sms-gateway/issues">Report Bug</a>
+    <!-- <a href="https://github.com/capcom6/android-smspeer">View Demo</a> -->
+    <a href="https://github.com/capcom6/android-smspeer/issues">Report Bug</a>
     ·
-    <a href="https://github.com/capcom6/android-sms-gateway/issues">Request Feature</a>
+    <a href="https://github.com/capcom6/android-smspeer/issues">Request Feature</a>
   </p>
 </div>
 
@@ -136,7 +136,7 @@ SMS Gateway turns your Android smartphone into an SMS gateway. It's a lightweigh
 
 ## Installation
 
-You can install app to your device from [prebuilt APK](https://github.com/capcom6/android-sms-gateway/releases).
+You can install app to your device from [prebuilt APK](https://github.com/capcom6/android-smspeer/releases).
 
 ### Build Variants
 
@@ -161,7 +161,7 @@ To use the application, you need to grant the following permissions:
 
 ### Installation from APK
 
-1. Navigate to the [Releases](https://github.com/capcom6/android-sms-gateway/releases) page.
+1. Navigate to the [Releases](https://github.com/capcom6/android-smspeer/releases) page.
 2. Download the latest APK file from the list of available releases.
 3. Transfer the APK file to your Android device.
 4. On your Android device, go to **Settings** > **Security** (or **Privacy** on some devices).
@@ -177,7 +177,7 @@ To use the application, you need to grant the following permissions:
 
 _For integration examples, please refer to the [CLI Tool Documentation](https://sms-gate.app/integration/cli/) and [API Documentation](https://sms-gate.app/integration/api/)_
 
-The SMS Gateway for Android can work in two modes: with a Local Server started on the device or with a Cloud Server. The basic API is the same for both modes and is documented on the [SMS Gateway for Android API Documentation](https://capcom6.github.io/android-sms-gateway/) page.
+The SMSpeer can work in two modes: with a Local Server started on the device or with a Cloud Server. The basic API is the same for both modes and is documented on the [SMSpeer API Documentation](https://capcom6.github.io/android-smspeer/) page.
 
 ### Local Server
 
@@ -310,7 +310,7 @@ For cloud mode the process is similar, simply change the URL to https://api.sms-
 - [ ] Provide an API endpoint to retrieve the list of available SIM cards on the device.
 - [x] Include detailed error messages in responses and logs.
 
-See the [open issues](https://github.com/capcom6/android-sms-gateway/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/capcom6/android-smspeer/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -348,7 +348,7 @@ Distributed under the Apache-2.0 license. See [LICENSE](LICENSE) for more inform
 
 If you have any questions or suggestions, feel free to reach out through the following channels:
 
-- **Issue Tracker:** [https://github.com/capcom6/android-sms-gateway/issues](https://github.com/capcom6/android-sms-gateway/issues)
+- **Issue Tracker:** [https://github.com/capcom6/android-smspeer/issues](https://github.com/capcom6/android-smspeer/issues)
 - **Email:** [support@sms-gate.app](mailto:support@sms-gate.app)
 - **Discord:** [Join our Discord server](https://discord.gg/vv9raFK4gX)
 
@@ -357,8 +357,8 @@ If you have any questions or suggestions, feel free to reach out through the fol
 - **Website:** [https://sms-gate.app](https://sms-gate.app)
 - **Documentation:** [https://docs.sms-gate.app](https://docs.sms-gate.app)
 - **Status Page:** [https://status.sms-gate.app](https://status.sms-gate.app)
-- **Project:** [https://github.com/android-sms-gateway](https://github.com/android-sms-gateway)
-- **Main Repository:** [https://github.com/capcom6/android-sms-gateway](https://github.com/capcom6/android-sms-gateway)
+- **Project:** [https://github.com/android-smspeer](https://github.com/android-smspeer)
+- **Main Repository:** [https://github.com/capcom6/android-smspeer](https://github.com/capcom6/android-smspeer)
 - **Author GitHub:** [capcom6](https://github.com/capcom6)
 
 
@@ -386,13 +386,13 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/capcom6/android-sms-gateway.svg?style=for-the-badge
-[contributors-url]: https://github.com/capcom6/android-sms-gateway/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/capcom6/android-sms-gateway.svg?style=for-the-badge
-[forks-url]: https://github.com/capcom6/android-sms-gateway/network/members
-[stars-shield]: https://img.shields.io/github/stars/capcom6/android-sms-gateway.svg?style=for-the-badge
-[stars-url]: https://github.com/capcom6/android-sms-gateway/stargazers
-[issues-shield]: https://img.shields.io/github/issues/capcom6/android-sms-gateway.svg?style=for-the-badge
-[issues-url]: https://github.com/capcom6/android-sms-gateway/issues
-[license-shield]: https://img.shields.io/github/license/capcom6/android-sms-gateway.svg?style=for-the-badge
-[license-url]: https://github.com/capcom6/android-sms-gateway/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/capcom6/android-smspeer.svg?style=for-the-badge
+[contributors-url]: https://github.com/capcom6/android-smspeer/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/capcom6/android-smspeer.svg?style=for-the-badge
+[forks-url]: https://github.com/capcom6/android-smspeer/network/members
+[stars-shield]: https://img.shields.io/github/stars/capcom6/android-smspeer.svg?style=for-the-badge
+[stars-url]: https://github.com/capcom6/android-smspeer/stargazers
+[issues-shield]: https://img.shields.io/github/issues/capcom6/android-smspeer.svg?style=for-the-badge
+[issues-url]: https://github.com/capcom6/android-smspeer/issues
+[license-shield]: https://img.shields.io/github/license/capcom6/android-smspeer.svg?style=for-the-badge
+[license-url]: https://github.com/capcom6/android-smspeer/blob/master/LICENSE

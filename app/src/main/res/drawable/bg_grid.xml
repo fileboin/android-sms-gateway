@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Window background: dark navy base + tiled subtle grid texture.
+    The grid_tile.png is a 32x32 transparent PNG with a very-low-opacity
+    border line at the right and bottom edges (alpha ~18/255).
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Dark navy base -->
+    <item>
+        <color android:color="@color/bg_primary" />
+    </item>
+    <!-- Tiled grid texture overlay -->
+    <item>
+        <bitmap
+            android:src="@drawable/grid_tile"
+            android:tileMode="repeat"
+            android:gravity="fill" />
+    </item>
+</layer-list>
