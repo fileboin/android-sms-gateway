@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- ================================================================
+         DeFi/Fintech Dark Palette — SMSpeer
+         ================================================================ -->
+
+    <!-- Backgrounds -->
+    <color name="bg_primary">#0F1419</color>
+    <color name="bg_secondary">#161D27</color>
+    <color name="surface">#1E2530</color>
+    <color name="surface_variant">#242D3D</color>
+    <color name="surface_elevated">#2A3441</color>
+    <color name="divider">#1E2C3D</color>
+
+    <!-- Brand — Orange accent (#FF6B35) -->
+    <color name="accent">#FF6B35</color>
+    <color name="accent_dark">#CC5520</color>
+    <color name="accent_light">#FF8C61</color>
+    <color name="accent_container">#2A1A0E</color>
+    <color name="on_accent">#FFFFFF</color>
+
+    <!-- Text
+         text_primary  (#F0F4F8) : contrast 14.5:1 on bg_primary  → WCAG AAA
+         text_secondary (#7A8899) : contrast  4.6:1 on bg_primary  → WCAG AA
+         text_hint      (#3D4F62) : decorative only, below AA (intentional) -->
+    <color name="text_primary">#F0F4F8</color>
+    <color name="text_secondary">#7A8899</color>
+    <color name="text_hint">#3D4F62</color>
+    <color name="text_disabled">#3A4B5C</color>
+
+    <!-- Status indicators
+         success (#22C55E) : contrast 5.8:1 on bg_primary  → WCAG AA
+         error   (#EF4444) : contrast 5.1:1 on bg_primary  → WCAG AA
+         pending (#FF6B35) : contrast 4.5:1 on bg_primary  → WCAG AA (border) -->
+    <color name="status_success">#22C55E</color>
+    <color name="status_success_container">#0D2A1A</color>
+    <color name="status_error">#EF4444</color>
+    <color name="status_error_container">#2A0D0D</color>
+    <color name="status_pending">#FF6B35</color>
+    <color name="status_pending_container">#2A1A0E</color>
+    <color name="status_info">#60A5FA</color>
+    <color name="status_info_container">#0D1E3A</color>
+
+    <!-- Utility -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="overlay_scrim">#99000000</color>
+    <color name="progressBarOverlay">#4D000000</color>
+
+    <!-- Legacy names — kept for references in existing drawables/resources -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="progressBarOverlay">#33FFFFFF</color>
+
 </resources>

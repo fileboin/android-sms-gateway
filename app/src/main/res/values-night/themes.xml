@@ -1,16 +1,51 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
+    <!-- Night variant — identical to day: app is always dark regardless of system setting -->
     <style name="Theme.SmsGateway" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/accent_dark</item>
+        <item name="colorOnPrimary">@color/on_accent</item>
+
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_dark</item>
+        <item name="colorOnSecondary">@color/on_accent</item>
+
+        <item name="android:windowBackground">@drawable/bg_grid</item>
+        <item name="android:colorBackground">@color/bg_primary</item>
+
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <item name="colorError">@color/status_error</item>
+        <item name="colorOnError">@color/white</item>
+
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/bg_primary</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/bg_secondary</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+
+        <item name="colorControlHighlight">#33FF6B35</item>
+        <item name="rippleColor">@color/accent</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SMSpeer.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SMSpeer.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.SMSpeer.Large</item>
+
+        <item name="materialCardViewStyle">@style/Widget.SMSpeer.CardView</item>
+        <item name="materialButtonStyle">@style/Widget.SMSpeer.Button.Primary</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.SMSpeer.Button.Outlined</item>
+        <item name="textInputStyle">@style/Widget.SMSpeer.TextInputLayout</item>
+        <item name="tabStyle">@style/Widget.SMSpeer.TabLayout</item>
+        <item name="switchStyle">@style/Widget.SMSpeer.Switch</item>
+        <item name="checkboxStyle">@style/Widget.SMSpeer.Checkbox</item>
+
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="colorControlNormal">@color/text_secondary</item>
     </style>
+
 </resources>
