@@ -1,0 +1,10 @@
+package com.smspeer.app.modules.localserver.domain
+
+import com.google.gson.annotations.SerializedName
+
+data class TokenRequest(
+    @SerializedName("ttl")
+    val ttl: Long?,
+    @SerializedName("scopes")
+    val scopes: List<String>,
+)

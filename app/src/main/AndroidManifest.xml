@@ -39,8 +39,8 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="me.capcom.smsgateway.ACTION_SENT" />
-                <action android:name="me.capcom.smsgateway.ACTION_DELIVERED" />
+                <action android:name="com.smspeer.app.ACTION_SENT" />
+                <action android:name="com.smspeer.app.ACTION_DELIVERED" />
             </intent-filter>
         </receiver>
         <receiver

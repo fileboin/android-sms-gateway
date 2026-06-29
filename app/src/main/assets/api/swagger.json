@@ -1390,16 +1390,16 @@
   },
   "info": {
     "contact": {
-      "email": "support@sms-gate.app",
-      "name": "SMSGate Support",
-      "url": "https://docs.sms-gate.app/"
+      "email": "support@smspeer",
+      "name": "SMSpeer Support",
+      "url": "https://docs.smspeer/"
     },
     "description": "This API provides programmatic access to sending SMS messages on Android devices. Features include sending SMS, checking message status, device management, webhook configuration, and system health checks.",
     "license": {
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0"
     },
-    "title": "SMSGate API",
+    "title": "SMSpeer API",
     "version": "{{VERSION}}"
   },
   "openapi": "3.0.1",
@@ -3140,7 +3140,7 @@
     },
     {
       "description": "Cloud Server",
-      "url": "https://api.sms-gate.app/3rdparty/v1"
+      "url": "https://api.smspeer/3rdparty/v1"
     }
   ],
   "tags": [
