@@ -25,7 +25,8 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 
-class App: Application() {
+class App : Application() {
+
     override fun attachBaseContext(base: Context?) {
         super.attachBaseContext(base?.let { LocaleHelper.onAttach(it) })
     }
@@ -33,6 +34,14 @@ class App: Application() {
     override fun onCreate() {
         super.onCreate()
 
+        // ── Install crash handler FIRST ──────────────────────────────────────
+        // Must be before startKoin so it catches any DI / startup failure.
+        val previousHandler = Thread.getDefaultUncaughtExceptionHandler()
+        Thread.setDefaultUncaughtExceptionHandler(
+            EarlyCrashHandler(this, previousHandler)
+        )
+
+        // ── Koin DI ──────────────────────────────────────────────────────────
         startKoin {
             androidLogger()
             androidContext(this@App)
@@ -56,12 +65,17 @@ class App: Application() {
             )
         }
 
-        Thread.setDefaultUncaughtExceptionHandler(
-            GlobalExceptionHandler(
-                Thread.getDefaultUncaughtExceptionHandler()!!,
-                get()
+        // ── DB-backed exception logger (installed on top of EarlyCrashHandler) ─
+        try {
+            Thread.setDefaultUncaughtExceptionHandler(
+                GlobalExceptionHandler(
+                    Thread.getDefaultUncaughtExceptionHandler()!!,
+                    get()
+                )
             )
-        )
+        } catch (_: Throwable) {
+            // If Koin injection fails here, EarlyCrashHandler is still active
+        }
 
         instance = this
 

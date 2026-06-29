@@ -71,6 +71,13 @@
             tools:node="merge" />
 
         <activity
+            android:name=".CrashActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.SmsGateway" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
